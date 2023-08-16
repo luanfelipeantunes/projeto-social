@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: cover;
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 312px;
+    height: 626px;
+    background-image: url("imagens/celular.png");
+    background-size: cover;
+}
+
+section#telefone > iframe{
+    position: relative;
+    /*background-image: url(imagens/tela-home.jpg);
+    background-size: cover;*/
+    top: 80px;
+    width: 269px;
+    height: 479px;
+    left: 22px;
+}
+
+section#icones{
+    display: float;
+    float: right;
+    margin-top: 50px;
+}
+
+section#icones > a >img{
+    width: 55px;
+    height: 55px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+a:hover > img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    border: 1px solid antiquewhite;
+    transform: translate(-8%, -8%);
+}
