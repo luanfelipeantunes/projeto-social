@@ -6,8 +6,8 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     background-image: url(imagens/fundo-madeira.jpg);
     background-size: cover;
 }
@@ -25,33 +25,28 @@ section#telefone{
 
 section#telefone > iframe{
     position: relative;
-    /*background-image: url(imagens/tela-home.jpg);
-    background-size: cover;*/
     top: 80px;
     width: 269px;
-    height: 479px;
-    left: 22px;
+    height: 476px;
+    left:22px;
 }
 
 section#icones{
-    display: float;
-    float: right;
-    margin-top: 50px;
+    text-align: right;
 }
 
 section#icones > a >img{
-    width: 55px;
-    height: 55px;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    width: 50px;
+    height: 50px;
+    margin-top: 80px;
     padding: 0px;
     border-radius: 50%;
-    transition: 0.5s;
 }
 
 a:hover > img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-    border: 1px solid antiquewhite;
-    transform: translate(-8%, -8%);
+    border: 1px solid rgba(250, 235, 215, 0.699);
+    box-sizing: border-box; /*Faz a borda fazer parte da caixa*/
+    transform: translate(-10%, -10%);
+    transition: transform 0.5s, border 1s;
 }
